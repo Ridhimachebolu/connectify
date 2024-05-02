@@ -93,16 +93,27 @@ const PostWidget = ({
         </IconButton>
       </FlexBetween>
       {isComments && (
-        <Box mt="0.5rem">
+        <Box m="0.5rem">
           {comments.map((comment, i) => (
             <Box key={`${name}-${i}`}>
-              {/* <Divider /> */}
-              <Typography sx={{ color: main, m: "0.5rem 0", pl: "1rem" }}>
-                {comment}
-              </Typography>
+              <Divider />
+              <Box sx={{ display: "flex", alignItems: "center" }}>
+                {/* Dummy Icon */}
+                <img
+                  src={
+                    "http://localhost:3001/assets/boy-character-standing-free-vector.jpg"
+                  }
+                  alt={`${name}-${i}`}
+                  style={{ width: "26px" }}
+                />
+                {/* Comment Text */}
+                <Typography sx={{ color: main, m: "0.5rem 0", pl: "1rem" }}>
+                  {comment}
+                </Typography>
+              </Box>
             </Box>
           ))}
-          {/* <Divider /> */}
+          <Divider />
         </Box>
       )}
     </WidgetWrapper>

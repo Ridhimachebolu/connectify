@@ -13,7 +13,7 @@ const LoginPage = () => {
         textAlign="center"
       >
         <Typography fontWeight="bold" fontSize="32px" color="#283A97">
-          Project 609
+          Connectify
         </Typography>
       </Box>
 

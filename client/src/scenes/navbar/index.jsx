@@ -56,7 +56,7 @@ const Navbar = () => {
             },
           }}
         >
-          Project 609
+          Connectify
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
